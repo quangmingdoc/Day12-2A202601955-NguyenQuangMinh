@@ -45,8 +45,12 @@ jobs:
 
       - name: Deploy to Railway
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-        run: railway up --service day12-agent --detach -y
+          RAILWAY_API_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: |
+          railway up --detach \
+            --project a0fa2de2-6236-4d65-865b-8a7892389d6b \
+            --environment e838213f-2573-4018-948e-8c97b35c7159 \
+            --service day12-agent
 
       - name: Smoke test
         run: |

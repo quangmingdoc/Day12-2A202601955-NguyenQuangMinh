@@ -35,7 +35,7 @@ COPY app/ app/
 COPY utils/ utils/
 
 # Chạy dưới quyền user thường
-RUN adduser --disabled-password --no-create-home appuser
+RUN useradd --no-create-home appuser
 USER appuser
 
 EXPOSE 8000

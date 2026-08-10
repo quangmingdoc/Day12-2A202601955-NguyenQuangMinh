@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     Không mặc định = fail fast ngay lúc khởi động.
     """
     port: int = 8000
-    agent_api_key: twX9QY6zLq8dgrI3SuO-xWgypMdOtj7kgjyJQ5T5Pdw
+    agent_api_key: str
     redis_url: str = "redis://localhost:6379/0"
     rate_limit_per_minute: int = 10
     monthly_budget_usd: float = 10.0

@@ -1,5 +1,7 @@
 # K3 — Ngày 12: Hạ Tầng Cloud & Deployment (9h00–13h00)
 
+![CI](https://github.com/quangmingdoc/Day12-2A202601955-NguyenQuangMinh/actions/workflows/ci.yml/badge.svg)
+
 Đưa một AI agent từ `localhost:8000` lên một địa chỉ công khai mà người khác
 gọi được, có bảo mật, có giới hạn chi phí, và không sập khi bạn deploy bản mới.
 
@@ -271,7 +273,7 @@ Nộp **link repository** lên Codelab. Repo phải ở chế độ public.
 
 ## Danh Sách Kiểm Tra Trước Khi Nộp
 
-- [ ] Repo đúng tên `DAY12-<MãHV>-<HọTên>`, viết liền không dấu
+- [x] Repo đúng tên `DAY12-<MãHV>-<HọTên>`, viết liền không dấu
 - [ ] `pytest tests/ -v` — đã chạy và biết rõ test nào còn rớt, vì sao
 - [ ] `python grade.py` — xem điểm, mục tiêu ≥ 75/100
 - [ ] `exercises.md` — đủ 10 câu, viết bằng lời của mình
